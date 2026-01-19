@@ -38,7 +38,7 @@ color: #FFFFFF;
 
 }
 .wave{
-    border: 1px solid rgba(0, 0, 0, 1);
+    /* border: 1px solid rgba(0, 0, 0, 1); */
     background: linear-gradient(47.64deg, #F7E93F, #FB09B4, #9100F8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -188,7 +188,7 @@ display: none;
     height: 38px;
     border-radius: 10000px;
     position: absolute;
-    top: 29%;
+    top: 37%;
     right: 38%;
 }
 .apps-contriner{
@@ -443,7 +443,7 @@ display: none;
     text-align: left;
 }
 .alex-tech{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 200;
     line-height: 24px;
     text-align: left;
@@ -500,6 +500,67 @@ display: none;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.footer{
+    background: url(./assets/footer-bg.png);
+    background-position: center;
+    max-width: 1600px;
+    height: 412px;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+    gap:32px;
+}
+.footerlogo-contriner{
+    display: flex;
+    /* justify-content: space-between; */
+    text-align: center;
+    color: #FFFFFF;
+    gap:45px;
+    
+    
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    align-items:center;
+    
+
+}
+.footerlogo-lastext{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+    text-align: center;
+}
+.uniq{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: center;
+}
+.footer-bigtext{
+    max-width: 1600px;
+    height: 92px;
+    padding-bottom: 32px;
+
+
+}
+.footer-navTech{
+    font-size: 85px;
+    max-width: 410px;
+    height: 60px;
+    color: #FFFFFF;
+}
+.footer-wave{
+    background: linear-gradient(47.64deg, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
     
    
