@@ -245,6 +245,80 @@ display: none;
     text-align: center;
     padding-top: 10px;
 }
+.apps2-contriner{
+   padding: 120px 200px;
+   background:  #230E3D;
+   max-width: 1600px;
+   height: 1121px;
+   gap: 40px;
+}
+.top-letter{
+   color: #FFFFFF;
+   font-style: Bold;
+   font-size: 48px;
+   font-weight: 700;
+   line-height: 58px;
+   etter-spacing: 0%;
+   text-align: center;
+   max-width: 1200px;
+   height: 58px;
+}
+
+
+.Exclusive1{
+    height: 80px;
+}
+.grid-contriner>*{
+    /* background-color: #351165; */
+    padding: 40px;
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #FFFFFF;
+    gap: 16px;
+
+}
+.grid-h4{
+    font-style: Bold;
+    font-size: 24px;
+    font-weight: 700;
+    ine-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.grid-h5{
+    font-size: 11px;
+    font-weight:300;
+    line-height: 24px;
+    text-align: left;
+}
+.headphone{
+    grid-area:headphone ;
+    justify-content: center;
+}
+.Mobile-Friendly{
+    grid-area: Mobile-Friendly;
+}
+.Global{
+    grid-area: Global;
+}
+.Exclusive{
+    grid-area: Exclusive;
+}
+.Rich{
+    grid-area: Rich;
+}
+.grid-contriner{
+    display: grid;
+    padding-top: 40px;
+    gap: 30px;
+    grid-template-areas: 
+    "headphone Mobile-Friendly Mobile-Friendly"
+    "headphone Global Global"
+    "Exclusive Exclusive Rich";
+}
 
 
     
