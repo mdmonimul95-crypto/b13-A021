@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,7 +8,7 @@
 
 }
 body{
-    background: rgba(26, 11, 46, 1);
+    /* background: rgba(26, 11, 46, 1); */
 }
 nav{
     display: flex;
@@ -16,6 +17,8 @@ nav{
     width: 100%;
     align-items: center;
     text-align: left;
+    background: rgba(26, 11, 46, 1);
+    
 }
 .menu{
     display: flex;
@@ -61,4 +64,128 @@ color: #FFFFFF;
 }
 .arrow{
     
+}
+.hamber{
+color: #FFFFFF;
+display: none;
+}
+
+@media screen and (max-width:576px) {
+    .menu{
+        display: none;
+    }
+    .Subscribe{
+        display: none;
+    }
+    .hamber{
+        display: inline;
+        width: 20px;
+        height: 20px;
+    }
+    nav{
+        padding: 16px 20px;
+        width: 100%;
+    }
+    .navTech{
+        font-size: 20px;
+        width: 137px;
+        height: 20px;
+    }
+    
+}
+.hero{
+    background: url(./assets/hero-bg.png);
+    background-position: center;
+    max-width: 1600px;
+    width: fit-content 100%;
+    /* height: 760px; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap:40px;
+    padding-top: 70px;
+.herocircle{
+    background:url(./assets/hero-circle.png);
+    width:350px ;
+    height: 350px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8.33px 41.67px;
+}
+.herotech{
+    font-style: Extra Bold;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 73px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 15px;
+}
+.herolittle{
+    color: rgba(255, 255, 255, 1);
+    font-style:normal   ;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+}
+.heroTL{
+    gap: 24px;
+}
+.buttom-spotify{
+    padding: 12px 20px 12px 20px;
+    gap: 8px;
+    border-radius: 10000px;
+    background:linear-gradient(47.64deg, #F7E93F, #FB09B4, #9100F8) ;
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;  
+
+}
+.spotilogo{
+    color: #FFFFFF;
+}
+.buttomcontriner{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+.buttom-Subscribe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 10000px;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #00FF88;
+    /* text-align: left; */
+    line-height: 19px;
+    border: 1px solid ;
+    border-color: #00FF88;
+    background:none;
+    
+}
+.newicon{
+    background-color: #00FF88;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight:600;
+    line-height: 22px;
+    width: 75px;
+    height: 38px;
+    border-radius: 10000px;
+    position: absolute;
+    top: 185px;
+    right: 500px;
 }
