@@ -70,46 +70,26 @@ color: #FFFFFF;
 display: none;
 }
 
-@media screen and (max-width:576px) {
-    .menu{
-        display: none;
-    }
-    .Subscribe{
-        display: none;
-    }
-    .hamber{
-        display: inline;
-        width: 20px;
-        height: 20px;
-    }
-    nav{
-        padding: 16px 20px;
-        width: 100%;
-    }
-    .navTech{
-        font-size: 20px;
-        width: 137px;
-        height: 20px;
-    }
-    
-}
+
 .hero{
     background: url(./assets/hero-bg.png);
     background-position: center;
     height: 760px;
-    max-width: 1600px;
-    width: fit-content 100%;
-    /* height: 760px; */
+    /* max-width: 1600px; */
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
     gap:40px;
-        padding-top: 70px;
+    padding-top: 70px;
 }
 .herocircle{
     background:url(./assets/hero-circle.png);
-    max-width: ;width:350px;
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    width:  350px;
+    width: fit-content 100%;
     height: 350px; 
     display: flex;
     justify-content: center;
@@ -187,9 +167,9 @@ display: none;
     width: 75px;
     height: 38px;
     border-radius: 10000px;
-    position: absolute;
-    top: 37%;
-    right: 38%;
+    position: relative;
+    top: 90px;
+    right: -120px;
 }
 .apps-contriner{
     background: #1A0B2E;
@@ -257,8 +237,7 @@ display: none;
    font-style: Bold;
    font-size: 48px;
    font-weight: 700;
-   line-height: 58px;
-   etter-spacing: 0%;
+   /* line-height: 58px; */
    text-align: center;
    max-width: 1200px;
    height: 58px;
@@ -370,15 +349,12 @@ display: none;
    font-size:60px;
    background: linear-gradient(47.64deg, #F7E93F, #FB09B4, #9100F8);
    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-  
-    
-    
+   -webkit-text-fill-color: transparent;   
 }
 
 .podcasttext{
     max-width: 380px;
-    height: 226px;
+    height: 287px;
     padding-left: 24px;
     padding-top: 15px;
     padding-right: 18px;
@@ -413,6 +389,7 @@ display: none;
 }
 .podcast-coontriner{
     display: flex;
+    /* height: 400px; */
     gap: 30px;
     padding-top: 25px;
 }
@@ -430,7 +407,7 @@ display: none;
     border-radius: 40px;
     background: rgba(53, 17, 101, 0.4);
     max-width: 1200px;
-    height: 280px;
+    height: 320px;
     padding: 40px;
     display: flex;
     gap: 24px;
@@ -516,6 +493,7 @@ display: none;
 }
 .footerlogo-contriner{
     display: flex;
+    width: fit-content;
     /* justify-content: space-between; */
     text-align: center;
     color: #FFFFFF;
@@ -548,12 +526,14 @@ display: none;
     max-width: 1600px;
     height: 92px;
     padding-bottom: 32px;
+    font-style: bold;
+    font-weight:bolder;
 
 
 }
 .footer-navTech{
     font-size: 85px;
-    max-width: 410px;
+    max-width: 576px;
     height: 60px;
     color: #FFFFFF;
 }
@@ -562,7 +542,187 @@ display: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-    
+@media screen and (max-width:576px) {
+    .menu{
+        display: none;
+    }
+    .Subscribe{
+        display: none;
+    }
+    .hamber{
+        display: inline;
+        width: 20px;
+        height: 20px;
+    }
+    nav{
+        padding: 16px 20px;
+        width: 100%;
+    }
+    .navTech{
+        font-size: 20px;
+        width: 137px;
+        height: 20px;
+    }
+    .newicon{
+        position: relative;
+        left: 110px;
+        top:90px;
+        /* max-width:60px; */
+        /* height: 30px; */
+        /* padding-top: 5px  ; */
+    }
+    .herocircle{
+        width: 250px;
+        height: 250px;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        background-position: center;
+        /* padding-bottom: 100px; */
+    }
+    .heroTL{
+        max-width: 576px;
+        height: 48px;
+    }
+    .hero{
+        padding-bottom: 220px;
+    }
+    .apps-contriner{
+        padding: 40px 20px;
+    }
+    .about-the-letter{
+        max-width: 576px;
+        height: 39px;
+        font-style: Bold;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: center;
+    }
+    .appsdownB-contriner{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+        
+    }
+    .apps2-contriner{
+        padding: 40px 20px;
+        max-width: 576px;
+        height: 1550px;
+    }
+    .top-letter{
+        max-width: 576px;
+        height: 39px;
+        font-style: Bold;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        /* justify-content:left */
+        /* text-align:left; */
+        /* display: flex; */
+        /* /* flex-direction: row;  */
+    }
+    .headphone{
+      grid-area:headphone ;
+       justify-content: center;
+    }
+    .Mobile-Friendly{
+      grid-area: Mobile-Friendly;
+    }
+    .Global{
+     grid-area: Global;
+    }
+    .Exclusive{
+     grid-area: Exclusive;
+    }
+    .Rich{
+      grid-area: Rich;
+    }
+
+    .grid-contriner{ 
+        
+        
+        grid-template-areas:none;
+        
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+    } 
+    .appsdownB-contriner{
+        padding-top: 50px;
+        max-width: 576;
+        
+     }
+    .Episodes-contriner{
+        max-width: 576px;
+        height: 2230px;
+        padding: 40px 20px;
+     }
+    .Featured-Episodes{
+        max-width: 576px;
+        height: 39px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: center;
+     }
+    .podcast-coontriner{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+     }
+    .Meet-the-Host{
+        max-width:576px;
+        height: 39px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: center;
+     }
+    .hostabout{
+        display: flex;
+        flex-direction: column;
+        max-width: 576px;
+        height: 550px;
+        justify-content: center;
+        align-items: center;
+     }
+    .alex-written{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+    .alex-tech{
+        text-align: center;
+     }
+    .footer{
+        max-width: 576px;
+        height: 400px;
+        background-position: center;
+        gap:20px;
+        padding-top: 40px;
+
+     }
+    .footer-bigtext{
+        padding-bottom: 5px;
+        height: 50px;
+    }
+    .footer-navTech{
+        font-size: 50px;
+        height: 25;
+        font-weight: 800;
+
+     }
+    .footerlogo-contriner{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    }   
    
 
 
