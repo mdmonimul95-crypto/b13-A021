@@ -59,8 +59,23 @@ color: #FFFFFF;
     gap: 4px;
     padding: 12px 16px 7px 16px;
     border-radius: 10000px;
+    /* background-size: 600% 600%; */
     background:linear-gradient(47.64deg, #F7E93F, #FB09B4, #9100F8) ;
+    animation: pulse 2s ease infinite;
+    /* transition: background-color 0.3 ease; */
     
+}
+
+/* @keyframes gradientMove {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}  */
+
+@keyframes pulse {
+  0%   { opacity: 0; transform: scale(1); }
+  50%  { opacity: 1; transform: scale(1.08); }
+  100% { opacity: 0; transform: scale(1); }
 }
 .arrow{
     
@@ -128,7 +143,8 @@ display: none;
     align-items: center;
     font-size: 16px;
     font-weight: 600;
-    line-height: 19px;  
+    line-height: 19px;
+    animation: pulse 2s ease infinite;  
 
 }
 .spotilogo{
