@@ -605,6 +605,8 @@ display: none;
     }
     .apps-contriner{
         padding: 40px 20px;
+        max-width: 576px;
+        height: 750px;
     }
     .about-the-letter{
         max-width: 576px;
@@ -624,7 +626,7 @@ display: none;
     .apps2-contriner{
         padding: 40px 20px;
         max-width: 576px;
-        height: 1550px;
+        height: 1800px;
     }
     .top-letter{
         max-width: 576px;
@@ -671,7 +673,7 @@ display: none;
      }
     .Episodes-contriner{
         max-width: 576px;
-        height: 2400px;
+        height: 2450px;
         padding: 40px 20px;
      }
     .Featured-Episodes{
@@ -701,7 +703,7 @@ display: none;
         display: flex;
         flex-direction: column;
         max-width: 576px;
-        height: 550px;
+        height: 600px;
         justify-content: center;
         align-items: center;
      }
