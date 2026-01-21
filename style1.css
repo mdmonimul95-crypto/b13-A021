@@ -7,6 +7,9 @@
     font-family:  "Inter", sans-serif;
 
 }
+a{
+    text-decoration: none;
+}
 body{
     /* background: rgba(26, 11, 46, 1); */
 }
@@ -102,6 +105,7 @@ display: none;
     background:url(./assets/hero-circle.png);
     background-position: center;
     background-size:100%;
+    /* background-size: cover; */
     background-repeat: no-repeat;
     width:  350px;
     width: fit-content 100%;
@@ -329,6 +333,7 @@ display: none;
     line-height: 58px;
     text-align: center;
 }
+
 .fastpodcast{
    max-width: 380px;
    height: 214px;
@@ -361,11 +366,29 @@ display: none;
    justify-content: center;
    align-items: center;
 }
-.fa-brands{
-   font-size:60px;
-   background: linear-gradient(47.64deg, #F7E93F, #FB09B4, #9100F8);
+.play-icons{
+    background-color: #FFFFFF;
+    width: 60px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.fa-circle-play{ 
+   /* font-size:60px; */
+   /* width: 200px; */
+   font-size: 90px;
+   /* font-weight: 900; */
+   /* height: 100px; */
+   /* color: #F7E93F; */
+   /* background-color: #FFFFFF; */
+   /* border-radius: 50%; */
+    padding: 5px;
+    background: linear-gradient(47.64deg, #fde802, #f703ad, #9100F8); 
    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;   
+   -webkit-text-fill-color: transparent;    
 }
 
 .podcasttext{
@@ -567,9 +590,16 @@ display: none;
     }
     .hamber{
         display: inline;
-        width: 20px;
+        max-width: 20px;
+        width: fit-content;
         height: 20px;
+        /* color: #FFFFFF; */
+        
     }
+    /* . fa-bars{
+        height: 5px;
+        width: 5px;
+    } */
     nav{
         padding: 16px 20px;
         width: 100%;
@@ -586,15 +616,32 @@ display: none;
         /* max-width:60px; */
         /* height: 30px; */
         /* padding-top: 5px  ; */
+        display: none;
     }
+    
     .herocircle{
-        width: 250px;
-        height: 250px;
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
+        width: 150px;
+        height: 150px;
+        /* width: fit-content; */
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
         background-position: center;
         /* padding-bottom: 100px; */
+        /* padding-bottom: 20px; */
+        /* font-size: small; */
+        background-size: cover;
+
+    }
+    .herocircle img{
+      font-size: small;
+      /* box-sizing: content-box; */
+      width: 100px;
+      height: 120px;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+      
     }
     .heroTL{
         max-width: 576px;
@@ -602,6 +649,20 @@ display: none;
     }
     .hero{
         padding-bottom: 220px;
+        background-size:cover;
+        /* background-repeat: no-repeat; */
+        background: none;
+        background: url(./assets/mobile-hero-.png);
+        background-size:cover;
+         background-repeat: no-repeat;
+         background-position:center;
+         max-width:576px ;
+         width: fit-content;
+         height: 600px;
+         justify-content:center;
+         align-items:center;
+         padding-top: 20px;
+
     }
     .apps-contriner{
         padding: 40px 20px;
@@ -610,7 +671,7 @@ display: none;
     }
     .about-the-letter{
         max-width: 576px;
-        height: 39px;
+        height: 60px;
         font-style: Bold;
         font-size: 32px;
         font-weight: 700;
@@ -669,8 +730,21 @@ display: none;
     .appsdownB-contriner{
         padding-top: 50px;
         max-width: 576;
+        height: 270px;
+        
         
      }
+    .appsdownB{
+        max-width: 300px;
+        font-weight: 700;
+        font-size: 40px;
+    }
+    .appsdownL{
+        font-size: 13px;
+    }
+    .appsdown-contriner{
+        gap: 5px;
+    }
     .Episodes-contriner{
         max-width: 576px;
         height: 2450px;
@@ -717,27 +791,64 @@ display: none;
         text-align: center;
      }
     .footer{
+        background: url(./assets/footernew.png);
+        background-size:cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         max-width: 576px;
-        height: 400px;
-        background-position: center;
-        gap:20px;
-        padding-top: 40px;
+        height: 248px;
+        background-position:center;
+        gap:24px;
+        padding: 40px 20px;
 
      }
     .footer-bigtext{
         padding-bottom: 5px;
-        height: 50px;
+        width: 219px;
+        height: 32px;
+        text-align: center;
+    }
+    .footer-wave{
+        height: 32px;
+        
     }
     .footer-navTech{
-        font-size: 50px;
-        height: 25;
+        font-size: 30px;
+        height: 32px;
+        width: 219px;
         font-weight: 800;
+        line-height: 32px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
 
      }
     .footerlogo-contriner{
-        display: grid;
+        display:grid;
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
+        width: 255px;
+        height: 64px;
+        
+    }
+    .play-icons{
+        /* font-size: 50px; */
+        width: 45px;
+        height: 45px;
+        /* background-position: center; */
+
+    }
+    .footer-logo{
+        height: 19px;
+    }
+    .uniq{
+        display: flex;
+    }
+    .fa-bars{
+        font-size: 25px;
+        color: #FFFFFF;
+        width: fit-content;
     }
 
     }   
